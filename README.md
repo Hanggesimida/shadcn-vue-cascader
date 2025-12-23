@@ -2,7 +2,7 @@
 
 A cascading dropdown component for selecting hierarchical data such as locations, categories, or organizational structures.
 
-Inspired by: Cascader components from Ant Design and React Suite
+**Inspired by:** [cascader-shadcn](https://github.com/Ademking/cascader-shadcn/)
 
 ## Features
 

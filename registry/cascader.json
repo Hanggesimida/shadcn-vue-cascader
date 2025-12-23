@@ -1,0 +1,28 @@
+{
+    "$schema": "https://ui.shadcn.com/schema/registry.json",
+    "name": "cascader-shadcn-vue",
+    "homepage": "https://github.com/Hanggesimida/shadcn-vue-cascader",
+    "items": [
+        {
+            "name": "cascader",
+            "type": "registry:component",
+            "title": "Cascader",
+            "description": "A cascading dropdown component for hierarchical data in Vue.",
+            "files": [
+                {
+                    "path": "components/ui/cascader/Cascader.vue",
+                    "content": "src/components/ui/cascader/Cascader.vue",
+                    "type": "registry:component"
+                }
+            ],
+            "registryDependencies": [
+                "popover",
+                "drawer"
+            ],
+            "dependencies": [
+                "lucide-vue-next",
+                "@vueuse/core"
+            ]
+        }
+    ]
+}
