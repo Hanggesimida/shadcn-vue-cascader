@@ -17,15 +17,25 @@ A cascading dropdown component for selecting hierarchical data such as locations
 
 ## Installation
 
-### Using Shadcn CLI
-
-```bash
-npx shadcn@latest add https://cascader-shadcn.surge.sh/r/cascader.json
-```
-
 ### Manual Installation
 
 Copy the `Cascader.vue` component from the repository into your Shadcn components directory (`src/components/ui/cascader/`).
+
+Before using this component, make sure you have followed the necessary setup steps for shadcn-vue and installed the required dependencies:
+
+**Using npm:**
+```bash
+npm install @vueuse/core lucide-vue-next
+```
+
+**Using pnpm:**
+```bash
+pnpm add @vueuse/core lucide-vue-next
+```
+
+Additionally, ensure you have the following shadcn-vue components installed (if not already present):
+- `popover` - for desktop dropdown display
+- `drawer` - for mobile drawer display
 
 ## Usage
 
