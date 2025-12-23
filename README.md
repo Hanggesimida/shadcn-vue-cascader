@@ -15,11 +15,13 @@ A cascading dropdown component for selecting hierarchical data such as locations
 - Shadcn-compatible + Tailwind-friendly
 - Fully type-safe (TypeScript)
 
+![Basic Usage Demo](./docs/demo/basic-usage.gif)
+
 ## Installation
 
 ### Manual Installation
 
-Copy the `Cascader.vue` component from the repository into your Shadcn components directory (`src/components/ui/cascader/`).
+Copy the [`Cascader.vue`](https://github.com/Hanggesimida/shadcn-vue-cascader/blob/main/src/components/ui/cascader/Cascader.vue) component from the repository into your Shadcn components directory (`src/components/ui/cascader/`).
 
 Before using this component, make sure you have followed the necessary setup steps for shadcn-vue and installed the required dependencies:
 
