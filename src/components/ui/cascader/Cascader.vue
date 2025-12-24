@@ -257,15 +257,15 @@ watch(open, async (val) => {
 // Styles
 // ============================================================================
 
-const inputBaseClass =
-    'file:text-foreground placeholder:text-muted-foreground ' +
-    'selection:bg-primary selection:text-primary-foreground ' +
-    'dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-md border ' +
-    'bg-transparent px-3 py-1 text-base shadow-xs outline-none ' +
+const triggerClass =
+    'flex items-center justify-between cursor-pointer ' +
+    'h-9 w-full min-w-0 rounded-md border border-input ' +
+    'bg-transparent px-3 py-2 shadow-xs ' +
+    'text-base md:text-sm ' +
     'transition-[color,box-shadow] ' +
+    'outline-none ' +
     'focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] ' +
-    'disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 ' +
-    'md:text-sm'
+    'hover:bg-accent hover:text-accent-foreground'
 
 </script>
 
@@ -273,9 +273,8 @@ const inputBaseClass =
     <component :is="isMobile ? Drawer : Popover" v-model:open="open">
         <component :is="isMobile ? DrawerTrigger : PopoverTrigger" as-child :disabled="disabled">
             <div tabindex="0" :class="cn(
-                inputBaseClass,
-                'flex items-center justify-between cursor-pointer py-2',
-                disabled && 'pointer-events-none opacity-50',
+                triggerClass,
+                disabled && 'pointer-events-none opacity-50 cursor-not-allowed',
                 props.class
             )">
                 <span :class="cn(
